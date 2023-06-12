@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature convertor</title>
+    <link rel="stylesheet" href="Temp.css">
+    <script src="Temp.js"></script>
+</head>
+<body>
+    <h1>Temperature Convertor</h1>
+    <table border="0">
+        <tr> 
+            <td>degree</td>
+            <td><input type="text"  id="input" oninput="Conv()"></td>
+        </tr>
+        <tr>
+            <td>Temperature type</td>
+            <td><select id="tempType">
+                <option>Fahrenheit</option>
+                <option>Celsius</option>
+                <option>Kelvin</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td><input type="text" value="result" id="result" onclick="Conv()" ></td>
+            <td><input type="reset" onclick="resetval()"></td>
+        </tr>
+
+    </table>
+</body>
+</html>
